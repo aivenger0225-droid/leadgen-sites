@@ -1,0 +1,9 @@
+{
+  "buildCommand": "pnpm install && pnpm build",
+  "outputDirectory": "dist",
+  "installCommand": "pnpm install",
+  "framework": "vite",
+  "routes": [
+    { "src": "/api/lead", "dest": "/api/lead.ts" }
+  ]
+}
