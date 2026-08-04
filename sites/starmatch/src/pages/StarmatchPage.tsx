@@ -124,7 +124,7 @@ export default function StarmatchPage({ apiEndpoint }: { apiEndpoint: string }) 
       {/* CTA + Contact */}
       <section id="contact" style={{ padding:'100px 32px', background:'#050510', position:'relative', overflow:'hidden' }}>
         <div style={{ position:'absolute', top:'50%', left:'50%', transform:'translate(-50%,-50%)', width:600, height:600, borderRadius:'50%', background:'radial-gradient(circle, #6366f111 0%, transparent 70%)', pointerEvents:'none' }} />
-        <div style={{ maxWidth:600, margin:'0 auto', position:'relative', zIndex:10' }}>
+        <div style={{ maxWidth:600, margin:'0 auto', position:'relative', zIndex:10 }}>
           <div style={{ textAlign:'center', marginBottom:48 }}>
             <h2 style={{ fontFamily:'Orbitron', fontWeight:900, fontSize:36, color:'white', margin:'0 0 16px', letterSpacing:1 }}>立即開始配對</h2>
             <p style={{ color:'rgba(255,255,255,0.4)', fontSize:15 }}>填寫表單，24小時內專人與您聯繫</p>
