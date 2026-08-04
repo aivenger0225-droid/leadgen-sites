@@ -25,7 +25,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     await resend.emails.send({
       from: 'Lead Gen <noreply@mail.starmatch.tw>',
       to: ['inquiry@starmatch.tw'],
-      replyTo: email,
+      reply_to: email,
       subject: `【星脈行銷】新商機：${company} - ${name}`,
       html: `
         <h2>有新潛在客戶提交表單</h2>

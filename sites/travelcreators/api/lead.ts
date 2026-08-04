@@ -11,7 +11,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     await resend.emails.send({
       from: 'Lead Gen <noreply@mail.travelcreators.tw>',
       to: ['inquiry@travelcreators.tw'],
-      replyTo: email,
+      reply_to: email,
       subject: `【遊獵傳媒】新商機：${company} - ${name}`,
       html: `<h2>有新潛在客戶提交表單</h2><p><strong>來源網站：</strong>travelcreators.tw</p><p><strong>姓名：</strong>${name}</p><p><strong>公司：</strong>${company}</p><p><strong>Email：</strong>${email}</p><p><strong>需求描述：</strong>${message || '（未填寫）'}</p><hr/><p style="color:#666;font-size:12px">此信件由 travelcreators.tw 網站自動發送</p>`,
     });
